@@ -35,7 +35,7 @@ This project is built using **React** and **Tailwind CSS**, with a focus on prov
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/busy-knots.git
+   git clone https://github.com/rahul5403/busy-knots.git
    cd busy-knots
    ```
 
