@@ -1,0 +1,121 @@
+.featured-categories {
+  text-align: center;
+  padding: 20px 140px;
+  background-color: #f9f9f9
+}
+
+.featured-categories h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.featured-categories p {
+  font-size: 16px;
+  color: #666;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+  padding: 0px 90px;
+}
+
+.category-card {
+  overflow: hidden;
+  text-align: center;
+  width: calc(100% - 16px);
+}
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.category-name {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .featured-categories {
+    padding: 20px 20px;
+    /* Reduce padding on mobile */
+  }
+
+  .featured-categories h2 {
+    font-size: 20px;
+  }
+
+  .featured-categories p {
+    font-size: 14px;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(1, 1fr);
+    /* Two columns on smaller screens */
+    padding: 0 20px;
+    /* Adjust padding */
+  }
+
+  .category-card {
+    width: 100%;
+  }
+
+  .category-name {
+    bottom: 20px;
+    /* Move category name up for smaller screens */
+    font-size: 14px;
+    /* Adjust font size */
+    padding: 8px 12px;
+    /* Adjust padding */
+  }
+}
+
+/* Extra Small Screens (Mobile Portrait) */
+@media (max-width: 480px) {
+  .featured-categories {
+    padding: 20px 10px;
+    /* Even less padding for small screens */
+  }
+
+  .featured-categories h2 {
+    font-size: 18px;
+  }
+
+  .featured-categories p {
+    font-size: 12px;
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+  }
+
+  .category-name {
+    bottom: 8px;
+    font-size: 8px;
+    padding: 2px 6px;
+    line-height: 10px;
+  }
+}
