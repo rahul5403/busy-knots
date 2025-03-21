@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Busy Knots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Busy Knots is a modern e-commerce platform specializing in soft nursery solutions. Our products are designed with sustainability, innovative designs, high quality, and timelessness in mind. We believe that baby products should be safe, pure, natural, ethical, and timeless so that they may be handed down through generations, with love.
 
-In the project directory, you can run:
+This project is built using **React** and **Tailwind CSS**, with a focus on providing a seamless user experience for browsing and purchasing nursery products.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design**: The website is fully responsive, ensuring a great user experience across all devices.
+- **Product Browsing**: Users can browse through various categories and products.
+- **Shopping Cart**: Users can add products to their cart, update quantities, and remove items.
+- **User Authentication**: Users can sign up, log in, and manage their accounts.
+- **Payment Integration**: Ready for payment integration (to be implemented).
+- **Tailwind CSS**: Utilizes Tailwind CSS for styling, ensuring a modern and consistent design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend**: React, React Router, Redux, Tailwind CSS
+- **Backend**: (To be implemented)
+- **Authentication**: Google OAuth (via `@react-oauth/google`)
+- **State Management**: Redux Toolkit, Redux Persist
+- **API Calls**: Axios
+- **Styling**: Tailwind CSS, CSS Modules
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/busy-knots.git
+   cd busy-knots
+   ```
 
-### `npm run eject`
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Run the development server**:
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Open your browser** and navigate to `http://localhost:3000` to view the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Available Scripts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **`npm start`**: Runs the app in development mode.
+- **`npm test`**: Launches the test runner in interactive watch mode.
+- **`npm run build`**: Builds the app for production to the `build` folder.
+- **`npm run eject`**: Ejects the app from Create React App (one-way operation).
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+busy-knots/
+├── public/                  # Static assets
+│   ├── index.html           # Main HTML file
+│   ├── manifest.json        # PWA manifest
+│   └── robots.txt           # Robots.txt file
+├── src/                     # Source code
+│   ├── assets/              # Images and other assets
+│   ├── components/          # Reusable components
+│   ├── data/                # Mock data (e.g., products)
+│   ├── pages/               # Page components
+│   ├── redux/               # Redux slices and store
+│   ├── styles/              # CSS and Tailwind styles
+│   ├── App.js               # Main application component
+│   ├── index.js             # Entry point
+│   └── reportWebVitals.js   # Performance monitoring
+├── .gitignore               # Files to ignore in Git
+├── package.json             # Project dependencies and scripts
+├── postcss.config.js        # PostCSS configuration
+├── tailwind.config.js       # Tailwind CSS configuration
+└── README.md                # Project documentation
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Styling
 
-### Code Splitting
+This project uses **Tailwind CSS** for styling. Tailwind is a utility-first CSS framework that allows for rapid UI development. The configuration for Tailwind can be found in `tailwind.config.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Custom Styles
 
-### Analyzing the Bundle Size
+Custom styles are written in CSS files located in the `src/styles/` directory. These styles are imported into the respective components as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## State Management
 
-### Making a Progressive Web App
+State management is handled using **Redux Toolkit** and **Redux Persist**. The Redux store is configured in `src/redux/store.js`, and slices for authentication and cart are located in `src/redux/authSlice.js` and `src/redux/cartSlice.js`, respectively.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Deployment
 
-### Advanced Configuration
+To deploy the application, run the following command to create a production build:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm run build
+```
 
-### Deployment
+The build artifacts will be stored in the `build/` directory. You can then deploy the contents of this directory to your preferred hosting service (e.g., Netlify, Vercel, GitHub Pages).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
